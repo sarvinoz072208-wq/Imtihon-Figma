@@ -1,18 +1,15 @@
 const watchBtn = document.getElementById("watchBtn");
-const container = document.getElementById("container");
-const darkToggle = document.getElementById("darkModeToggle");
+const card = document.getElementById("card");
+const darkToggle = document.getElementById("darkToggle");
 
-// VIDEO chiqishi
 watchBtn.addEventListener("click", () => {
-  container.innerHTML = `
+  card.innerHTML = `
     <video controls autoplay>
       <source src="video.mp4" type="video/mp4">
-      Your browser does not support video.
     </video>
   `;
 });
 
-// DARK MODE
 darkToggle.addEventListener("click", () => {
   document.body.classList.toggle("dark");
 });
